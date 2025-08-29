@@ -1,44 +1,62 @@
-# 🐍 Python OOP Challenge
+# OOP Assignment: Classes, Inheritance & Polymorphism
 
-## 📌 Description
-This project demonstrates core **Object-Oriented Programming (OOP)** concepts in Python, including:
+## Overview
 
-- **Classes and Objects**  
-- **Constructors (__init__)**  
-- **Encapsulation**: Hiding internal details and exposing only what’s necessary.  
-- **Inheritance**: Reusing attributes and methods from parent classes.  
-- **Polymorphism**: Using the same method name in different classes with different behaviors.  
+This project demonstrates key concepts of *Object-Oriented Programming (OOP) in Python*, including:
+
+- *Classes and Objects*
+- **Constructors (__init__)**
+- *Encapsulation (private attributes)*
+- *Inheritance*
+- *Polymorphism*
+
+It consists of two parts:
+
+1. *Assignment 1: Design Your Own Class*
+
+   - A Superhero class with attributes, methods, and encapsulated health.
+   - A subclass FlyingHero demonstrating inheritance and additional functionality.
+   - Demonstrates object creation, method usage, and private attribute access via getter methods.
+
+2. *Activity 2: Polymorphism Challenge*
+   - A Vehicle base class with a move() method.
+   - Subclasses Car, Plane, and Boat implement move() differently.
+   - Demonstrates *polymorphism*: same method behaves differently for each subclass.
 
 ---
 
-## 🖥️ How to Run
+## How to Run
 
 1. Clone the repository:
-```bash
-git clone https://github.com/Feven-Zeray/oop_class_challenge.git
-cd oop_class_challenge
-Run the Python file containing your classes, for example:
+
+bash
+git clone https://github.com/yourusername/oop-class-assignment.git
+Navigate to the project folder:
 
 bash
 Copy code
-python oop_challenge.py
-Follow the program prompts to test class behavior, encapsulation, inheritance, or polymorphism.
+cd oop-class-assignment
+Run the Python file:
 
-📂 Example: Encapsulation
-python
+bash
 Copy code
-class BankAccount:
-    def __init__(self, balance):
-        self.__balance = balance  # private attribute
+python assignment1_polymorphism.py
+Expected Output
+vbnet
+Copy code
+Hero: Iron Fist
+Superpower: Martial Arts
+Health: 100
+Iron Fist took 20 damage!
+Iron Fist's Health: 80
 
-    def deposit(self, amount):
-        self.__balance += amount
-
-    def get_balance(self):
-        return self.__balance
-
-account = BankAccount(100)
-account.deposit(50)
-print(account.get_balance())  # Output: 150
-Attempting print(account.__balance) will raise an error, demonstrating encapsulation.
-
+---Flying Hero---
+Hero: Skybolt
+Superpower: Lightning
+Health: 120
+Skybolt is flying at 300 km/h!
+Skybolt took 50 damage!
+Skybolt's Health: 70
+Car is driving 🚗
+Plane is flying ✈
+Boat is sailing ⛴
